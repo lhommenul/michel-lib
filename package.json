@@ -1,0 +1,33 @@
+{
+  "name": "michel-lib",
+  "private": false,
+  "version": "0.0.8",
+  "type": "module",
+  "description": "",
+  "author": "lhommenul",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/michel-lib.umd.cjs",
+  "module": "./dist/michel-lib.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/michel-lib.es.js",
+      "require": "./dist/michel-lib.umd.cjs"
+    },
+    "./dist/css/style.css": "./dist/css/style.css"
+  },  
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.41"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "vite": "^3.2.0"
+  }  
+}
